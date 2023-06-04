@@ -65,7 +65,7 @@ Install Biopython via :
 
         cd Solynta_PotatoGenomeDashboard/potatoGenome_SolyntaTask/potatoGenomeTask
         
-3. Run the following commands one-by-one:
+3. Run the following commands:
    
        python manage.py makemigrations
 
