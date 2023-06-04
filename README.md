@@ -53,17 +53,17 @@ Install Biopython via :
 
 1. To install the Potato Whole Genome Dashboard, first clone the following repository:
 
-       git clone https://github.com/samhitapn/SOLYNTA_PilotProject.git
+       git clone https://github.com/samhitapn/Solynta_PotatoGenomeDashboard.git
 
 ## Running the Potato Whole Genome Dashboard application
 
-1. Change the value of ```Entrez.email``` in ```SOLYNTA_PilotProject/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenome/getPotatoGenomes.py``` to provide your own email for reference to NCBI.  
+1. Change the value of ```Entrez.email``` in ```Solynta_PotatoGenomeDashboard/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenome/getPotatoGenomes.py``` to provide your own email for reference to NCBI.  
 
        def getGenomeData():
               Entrez.email="example@gmail.com" ### Change the email id here to your own
 2. Navigate to the folder:
 
-        cd SOLYNTA_PilotProject/potatoGenome_SolyntaTask/potatoGenomeTask
+        cd Solynta_PotatoGenomeDashboard/potatoGenome_SolyntaTask/potatoGenomeTask
         
 3. Run the following commands one-by-one:
    
@@ -79,13 +79,13 @@ Install Biopython via :
         http://127.0.0.1:8000/potatoGenome
         
     Note: The app uses DataTables and the example styling provided in : https://datatables.net/examples/data_sources/dom.
-    This can be configured by changing the html template in ```SOLYNTA_PilotProject/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenome/templates/potatoGenome/index.html```
+    This can be configured by changing the html template in ```Solynta_PotatoGenomeDashboard/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenome/templates/potatoGenome/index.html```
     
 5. The dashboard is currently set to be refreshed every 10 minutes. Every time the database is refreshed, its details are logged into the log file you pointed to above.
 
    The frequency of the refresh can be configured per your need by following the below steps : 
     
-    i.  Open the file ```SOLYNTA_PilotProject/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenomeTask/settings.py``` in an editor.
+    i.  Open the file ```Solynta_PotatoGenomeDashboard/potatoGenome_SolyntaTask/potatoGenomeTask/potatoGenomeTask/settings.py``` in an editor.
     
     ii. Change the value of ```*/10 * * * *``` in the CRONJOBS section as necessary.
            
