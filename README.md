@@ -94,6 +94,8 @@ Install Biopython via :
            ]
       For further details on how to configure this frequency, please refer to : https://cloud.google.com/scheduler/docs/configuring/cron-job-schedules.
     
-    iii. Once you have made the changes, please re-run the below command:
+    iii. Once you have made the changes, please run the below command:
     
         python manage.py crontab add
+    
+    iv.  Now you can run the server again (as described in step 4) and visit the app to see changes, if any, after a scheduled run.
